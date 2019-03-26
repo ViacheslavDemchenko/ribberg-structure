@@ -1,0 +1,49 @@
+html,
+body {
+	overflow-x: hidden;
+    font-family: 'OpenSans-Regular', 'Arial', 'Tahoma', sans-serif;
+	font-weight: 400;
+  	font-style: normal;
+  	font-size: 16px;
+  	color: #000;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+	padding: 0 15px;
+}
+
+.container--padding-none {
+    .p-0;
+}
+
+.square-warning,
+.lamps-warning {
+    position: relative;
+    display: none;
+    .m-0;
+    font-size: 0;
+
+    &::before {
+        position: absolute;
+        content: "Заполните это поле";
+        display: block;
+        .opensans-regular;
+        font-size: 14px;
+        color: @red_2;
+    }
+}

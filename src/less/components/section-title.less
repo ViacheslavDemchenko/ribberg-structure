@@ -1,0 +1,21 @@
+.section__title {
+	position: relative;
+    .m-0;
+    .opensans-semibold;
+    font-size: @section-title--mobile;
+    text-transform: uppercase;
+    color: @black;
+
+    @media (min-width: 1170px) {
+        font-size: @section-title;
+    }
+
+
+    &::before {
+    	position: absolute;
+        content: "";
+        display: block;
+        height: 2px;
+        background-color: @red_2;
+    }
+}

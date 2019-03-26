@@ -1,0 +1,138 @@
+.production {
+    padding: 30px 0;
+    background-color: @white;
+
+    @media (min-width: 1170px) {
+       padding: 0 0 50px 0;
+    }
+
+  &-wrap {
+      .row;
+      .justify-between;
+
+    .form-block {
+      .col-12;
+      text-align: center;
+
+    @media (min-width: 900px) {
+      .col-6;
+      text-align: left;
+    }
+
+    @media (min-width: 1024px) {
+      text-align: left;
+    }
+
+    .section__title {
+      .section__title;
+      text-align: center;
+      margin-bottom: 40px;
+
+      @media (min-width: 900px) {
+        margin-top: 40px;
+        text-align: left;
+      }
+
+      @media (min-width: 1170px) {
+        margin-top: 61px;
+      }
+
+      &::before {
+        width: 80px;
+        bottom: -19px;
+        left: calc(50% - 80px/2);
+
+        @media (min-width: 900px) {
+          width: 500px;
+          left: 155px;
+        }
+
+        @media (min-width: 1170px) {
+          width: 500px;
+          left: 200px;
+        }
+      }
+    }
+
+      .form__title {
+        .m-0;
+        margin-bottom: 20px;
+        .opensans-semibold;
+        font-size: @form__title;
+        color: @black;
+
+        @media (min-width: 900px) {
+          font-size: 20px;
+        }
+      }
+
+      form {
+        width: 260px;
+        margin: 0 auto 30px auto;
+
+        @media (min-width: 900px) {
+          .m-0;
+          width: 350px;
+        }
+
+        @media (min-width: 1170px) {
+          margin-top: 45px;
+        }
+      }
+
+     .input-block {
+        .column;
+        .align-center;
+
+        @media (min-width: 900px) {
+          .align-start;
+        }
+      } 
+
+      input {
+        margin-bottom: 10px;
+      }
+
+      input,
+      textarea { 
+        width: 260px;
+        padding: 15px;
+        .opensans-italic;
+        font-size: @form__input;
+        color: @grey_1;
+        border: 1px solid @red_2;
+        outline: none;
+        background-color: transparent;
+
+        @media (min-width: 900px) {
+          width: 350px;
+        }
+      }
+
+      textarea {
+        height: 70px;
+      }
+
+      &__btn {
+        margin-top: 20px;
+        padding: 16px 86px;
+        .opensans-regular;
+        font-size: @form-block__btn;
+      }   
+    }
+
+    .production-slider {
+        .col-12;
+        width: 600px;
+        overflow: hidden;
+
+        @media (min-width: 900px) {
+          .col-6;
+          @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+            flex-basis: 45%;
+          }  
+        }
+    }
+  }
+}
+

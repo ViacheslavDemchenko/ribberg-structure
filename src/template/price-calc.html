@@ -1,0 +1,45 @@
+<section class="price-calc">
+	
+    <div class="container">
+    	
+        <h2 class="section__title wow animated fadeInDown">Рассчитайте стоимость нового потолка</h2>
+         
+        <div class="content-wrap">
+        	
+            <div class="calc wow animated bounceInLeft" data-wow-offset="200">
+
+            	<p class="calc-section__title">Выберите тип полотна:</p>
+
+            	<div class="calc-checkbox-list">
+            		<input class="calc-checkbox__item" id="matt" type="radio" name="canvas" value="200" checked>
+	                <label for="matt">Матовый</label>
+	                <input class="calc-checkbox__item" id="glossy" type="radio" name="canvas" value="300">
+	                <label for="glossy">Глянцевый</label>
+	                <input class="calc-checkbox__item" id="satin" type="radio" name="canvas" value="400">
+	                <label for="satin">Сатиновый</label>
+            	</div>
+                <!-- /calc-checkbox-list-->
+
+            	<p class="calc-section__title">Укажите площадь м²</p>
+                <input id="square" class="square-field" type="text" name="square">
+                <p class="square-warning"></p>
+            	<p class="calc-section__title">Количество светильников:</p>
+                <input id="lamps" class="lamps-field" type="text" name="lamps">
+                <p class="lamps-warning"></p>
+
+            	<div class="calc-result">
+            		<p class="calc-section__title">Результат</p>
+            		<p id="total" class="calc-total">0</p><span class="rub">руб.</span>
+            	</div>
+                <button class="btn calc__btn">Рассчитать</button>
+            </div>
+            <!-- /calc-->
+
+            <div class="img wow animated bounceInRight" data-wow-offset="200"></div>
+
+        </div>
+        <!-- /content-wrap-->
+    </div>
+    <!-- /container -->
+</section>
+<!-- /price-calc -->

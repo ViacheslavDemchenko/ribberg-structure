@@ -1,0 +1,81 @@
+.yandex-map {
+	position: relative;
+	height: 700px;
+	overflow: hidden;
+	background-color: @light-grey_3;
+
+	@media (min-width: 1024px) {
+       min-height: 400px; 
+    }
+
+	@media (min-width: 1170px) {
+       height: 500px; 
+    }
+}
+
+.adress-card {
+    margin: 5px auto;
+    width: 95%;
+    display: block;
+    background-color: rgba(@red_2, 0.8);
+
+    @media (min-width: 700px) {
+    	position: absolute;
+        z-index: 100;
+        width: 300px;
+        height: 100%;
+        margin: 0;     
+    }
+
+    @media (min-width: 1170px) {
+    	top: 0;
+        left: 0;
+        width: 400px;
+        height: 500px;    
+    }
+
+    &-wrap {
+    	padding: 79px 50px 84px 50px; 
+
+    	@media (min-width: 1170px) {
+    	    padding: 79px 50px 84px 50px;    
+        }
+    }
+
+    &__title {
+    	.m-0;
+        .opensans-semibold;
+        font-size: @adress-card__title--mobile;
+        text-transform: uppercase;
+        color: @white;
+
+        @media (min-width: 1170px) {
+    	    font-size: @adress-card__title;    
+        }
+    }
+
+    &__subtitle {
+    	.m-0;
+    	margin-top: 20px;
+        .opensans-semibold;
+        font-size: @adress-card__subtitle--mobile;
+        text-transform: uppercase;
+        color: @white;
+
+        @media (min-width: 1170px) {
+    	    font-size: @adress-card__subtitle;    
+        }
+    }
+
+    &__text {
+    	.m-0;
+    	margin-top: 10px;
+        .opensans-regular;
+        font-size: @adress-card__text--mobile;
+        color: @white;
+
+        @media (min-width: 1170px) {
+    	    font-size: @adress-card__text;    
+        }
+    } 
+}

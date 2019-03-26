@@ -1,0 +1,114 @@
+.ceiling-price {
+	padding: 30px 0;
+
+	@media (min-width: 1170px) {
+        padding: 78px 0 79px 0;
+    }
+	
+	.section__title {
+        .section__title;
+        margin: 0 0 48px 0;
+        text-align: center;
+
+        &::before {
+			width: 80px;
+            bottom: -19px;
+            left: calc(50% - 80px/2);
+
+            @media (min-width: 1170px) {
+                width: 80px;
+                bottom: -19px;
+                left: 534px;
+            }
+		}
+	}
+
+	.gallery-wrap {
+
+		.gallery-list {
+            .p-0--m-0;
+            list-style: none;
+            .row;
+
+			.gallery__item {
+				.col-12;
+				.p-0;
+				margin-bottom: 20px;
+				text-align: center;
+
+				@media (min-width: 700px) {
+                    .col-6;
+                }
+
+                @media (min-width: 900px) {
+
+                    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+                       flex-basis: 31%;
+                    } 
+                }
+
+                @media (min-width: 1000px) {
+                    .col-4;
+                    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+                       flex-basis: 31%;
+                    } 
+                }
+
+				@media (min-width: 1170px) {
+                    .col-4;
+                    text-align: left;
+                    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+                        flex-basis: 31%;
+                    }
+                }
+
+				&:nth-child(1),
+				&:nth-child(2),
+				&:nth-child(3) {
+
+					@media (min-width: 1170px) {
+                        margin-bottom: 35px;
+                    }		
+				}
+
+				.img-wrap {
+					width: 280px;
+                    height: auto;
+                    overflow: hidden;
+                    margin: auto;
+
+                    @media (min-width: 1024px) {
+                        width: 300px;
+                    }
+
+                    @media (min-width: 1170px) {
+                        width: 360px;
+                    }
+				}
+
+				&-title {
+					.m-0;
+					margin: 10px 0;
+                    .opensans-semibold;
+                    font-size: @ceiling-price__title;
+
+                    @media (min-width: 1170px) {
+                        margin: 22px 0 16px 0;
+                    }
+				}
+
+				&-price {
+					.m-0;
+					margin-left: 5px;
+                    .opensans-semibold;
+                    font-size: @ceiling-price__price;
+                    color: @red_2;
+
+                    @media (min-width: 1170px) {
+                        margin-left: 0;
+                    }
+				}
+			}
+		}
+	}
+}
